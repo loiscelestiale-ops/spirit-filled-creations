@@ -29,6 +29,7 @@ html {
 }
 
 body {
+  <div class="live-bg" aria-hidden="true"></div>
   font-family: var(--font-sans);
   background: var(--emerald-deep);
   color: var(--text-dark);
