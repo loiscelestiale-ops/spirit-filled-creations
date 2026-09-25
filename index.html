@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spirit-Filled Creations | Handmade Paintings, Key Chains & Fridge Magnets</title>
+  <meta name="description" content="Handmade paintings, key chains and fridge magnets crafted with Spirit-filled skill. Inspired by Exodus 35:31." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">✦</span>
+        Spirit-Filled Creations
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#inspiration">Inspiration</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="hero-eyebrow">Handmade with purpose</p>
+      <h1>Spirit-Filled<br />Creations</h1>
+      <blockquote class="verse">
+        “and he has filled him with the Spirit of God, with wisdom, with understanding, with knowledge and with all kinds of skills—”
+        <cite>— Exodus 35:31</cite>
+      </blockquote>
+      <p class="hero-sub">Original paintings • Handcrafted key chains • Unique fridge magnets</p>
+      <a href="#shop" class="btn btn-primary">Shop the Collection</a>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <section id="shop" class="section shop">
+    <div class="container">
+      <div class="section-header">
+        <h2>The Collection</h2>
+        <p>Each piece is made by hand, one at a time, with care and intention.</p>
+      </div>
+
+      <!-- Category filters -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="paintings">Paintings</button>
+        <button class="filter-btn" data-filter="keychains">Key Chains</button>
+        <button class="filter-btn" data-filter="magnets">Fridge Magnets</button>
+      </div>
+
+      <div class="products-grid" id="products-grid">
+        <!-- Paintings -->
+        <article class="product-card" data-category="paintings">
+          <div class="product-image">
+            <div class="placeholder-img painting-1">
+              <span>Painting</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Painting</span>
+            <h3>Golden Hour Landscape</h3>
+            <p class="product-desc">Acrylic on canvas. Warm tones of sunset over rolling hills.</p>
+            <div class="product-footer">
+              <span class="price">₹2,800</span>
+              <button class="btn btn-sm order-btn" data-product="Golden Hour Landscape" data-price="2800">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="paintings">
+          <div class="product-image">
+            <div class="placeholder-img painting-2">
+              <span>Painting</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Painting</span>
+            <h3>Still Waters</h3>
+            <p class="product-desc">Soft watercolor study of a quiet lake at dawn.</p>
+            <div class="product-footer">
+              <span class="price">₹1,950</span>
+              <button class="btn btn-sm order-btn" data-product="Still Waters" data-price="1950">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="paintings">
+          <div class="product-image">
+            <div class="placeholder-img painting-3">
+              <span>Painting</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Painting</span>
+            <h3>Abstract Grace</h3>
+            <p class="product-desc">Mixed media abstract exploring light and movement.</p>
+            <div class="product-footer">
+              <span class="price">₹3,200</span>
+              <button class="btn btn-sm order-btn" data-product="Abstract Grace" data-price="3200">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Key Chains -->
+        <article class="product-card" data-category="keychains">
+          <div class="product-image">
+            <div class="placeholder-img keychain-1">
+              <span>Key Chain</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Key Chain</span>
+            <h3>Hand-Painted Floral</h3>
+            <p class="product-desc">Wooden keychain with hand-painted flowers. Sealed for durability.</p>
+            <div class="product-footer">
+              <span class="price">₹350</span>
+              <button class="btn btn-sm order-btn" data-product="Hand-Painted Floral Keychain" data-price="350">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="keychains">
+          <div class="product-image">
+            <div class="placeholder-img keychain-2">
+              <span>Key Chain</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Key Chain</span>
+            <h3>Scripture Charm</h3>
+            <p class="product-desc">Resin keychain with delicate scripture design and gold accent.</p>
+            <div class="product-footer">
+              <span class="price">₹420</span>
+              <button class="btn btn-sm order-btn" data-product="Scripture Charm Keychain" data-price="420">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="keychains">
+          <div class="product-image">
+            <div class="placeholder-img keychain-3">
+              <span>Key Chain</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Key Chain</span>
+            <h3>Mini Landscape</h3>
+            <p class="product-desc">Tiny original painting sealed under resin on a sturdy keyring.</p>
+            <div class="product-footer">
+              <span class="price">₹480</span>
+              <button class="btn btn-sm order-btn" data-product="Mini Landscape Keychain" data-price="480">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Fridge Magnets -->
+        <article class="product-card" data-category="magnets">
+          <div class="product-image">
+            <div class="placeholder-img magnet-1">
+              <span>Magnet</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Fridge Magnet</span>
+            <h3>Botanical Set (3)</h3>
+            <p class="product-desc">Set of three hand-painted botanical magnets on strong magnets.</p>
+            <div class="product-footer">
+              <span class="price">₹550</span>
+              <button class="btn btn-sm order-btn" data-product="Botanical Magnet Set" data-price="550">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="magnets">
+          <div class="product-image">
+            <div class="placeholder-img magnet-2">
+              <span>Magnet</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Fridge Magnet</span>
+            <h3>Verse of the Day</h3>
+            <p class="product-desc">Hand-lettered scripture magnet. Choose your favorite verse.</p>
+            <div class="product-footer">
+              <span class="price">₹280</span>
+              <button class="btn btn-sm order-btn" data-product="Verse of the Day Magnet" data-price="280">Order</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="magnets">
+          <div class="product-image">
+            <div class="placeholder-img magnet-3">
+              <span>Magnet</span>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-category">Fridge Magnet</span>
+            <h3>Abstract Tile</h3>
+            <p class="product-desc">Small abstract painting mounted on a strong fridge magnet.</p>
+            <div class="product-footer">
+              <span class="price">₹320</span>
+              <button class="btn btn-sm order-btn" data-product="Abstract Tile Magnet" data-price="320">Order</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inspiration / Verse -->
+  <section id="inspiration" class="section inspiration">
+    <div class="container">
+      <div class="inspiration-grid">
+        <div class="inspiration-text">
+          <p class="eyebrow">Our Foundation</p>
+          <h2>Filled with the Spirit of God</h2>
+          <blockquote class="verse-large">
+            “and he has filled him with the Spirit of God, with wisdom, with understanding, with knowledge and with all kinds of skills—”
+            <cite>— Exodus 35:31</cite>
+          </blockquote>
+          <p>
+            In the book of Exodus, God filled Bezalel with His Spirit so that he could create beautiful and skillful work for the Tabernacle. 
+            This verse reminds us that creativity, craftsmanship, and artistic skill are gifts from God.
+          </p>
+          <p>
+            Every painting, key chain, and fridge magnet in this shop is made with that same understanding: that the ability to create 
+            is a gift, and that the work of our hands can bring beauty, encouragement, and joy into everyday spaces.
+          </p>
+        </div>
+        <div class="inspiration-visual">
+          <div class="verse-card">
+            <span class="verse-ref">Exodus 35:31</span>
+            <p>Wisdom • Understanding • Knowledge • Skill</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header">
+        <h2>About the Artist</h2>
+        <p>Handmade, one piece at a time.</p>
+      </div>
+      <div class="about-content">
+        <p>
+          Welcome to Spirit-Filled Creations. I create original paintings, handcrafted key chains, and unique fridge magnets 
+          from my studio. Each item is made slowly and intentionally — no mass production, no shortcuts.
+        </p>
+        <p>
+          Whether it’s a larger canvas meant to become a focal point in a home, or a small magnet that brings a quiet smile 
+          every time the fridge is opened, my hope is that these pieces carry a sense of care and beauty into the places they go.
+        </p>
+        <p>
+          Shipping is available across India. Custom orders and special requests are welcome — just reach out.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Order & Contact</h2>
+        <p>Ready to bring a piece home? Send a message and I’ll reply as soon as possible.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Full name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email or Phone</label>
+            <input type="text" id="email" name="email" required placeholder="So I can reply" />
+          </div>
+          <div class="form-group">
+            <label for="product">Interested in</label>
+            <select id="product" name="product">
+              <option value="">Select a product (optional)</option>
+              <option value="Golden Hour Landscape">Golden Hour Landscape – ₹2,800</option>
+              <option value="Still Waters">Still Waters – ₹1,950</option>
+              <option value="Abstract Grace">Abstract Grace – ₹3,200</option>
+              <option value="Hand-Painted Floral Keychain">Hand-Painted Floral Keychain – ₹350</option>
+              <option value="Scripture Charm Keychain">Scripture Charm Keychain – ₹420</option>
+              <option value="Mini Landscape Keychain">Mini Landscape Keychain – ₹480</option>
+              <option value="Botanical Magnet Set">Botanical Magnet Set – ₹550</option>
+              <option value="Verse of the Day Magnet">Verse of the Day Magnet – ₹280</option>
+              <option value="Abstract Tile Magnet">Abstract Tile Magnet – ₹320</option>
+              <option value="Custom Order">Custom Order / Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Tell me what you'd like, quantity, shipping city, or any questions..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note">This form opens your email app so you can send the message directly.</p>
+        </form>
+
+        <div class="contact-info">
+          <h3>Other ways to reach me</h3>
+          <ul>
+            <li>
+              <strong>WhatsApp</strong><br />
+              <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">+91 XXXXX XXXXX</a>
+              <span class="hint">(Replace with your number)</span>
+            </li>
+            <li>
+              <strong>Email</strong><br />
+              <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+              <span class="hint">(Replace with your email)</span>
+            </li>
+            <li>
+              <strong>Instagram</strong><br />
+              <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a>
+            </li>
+          </ul>
+          <div class="shipping-note">
+            <h4>Shipping</h4>
+            <p>Orders are carefully packed and shipped across India. Shipping cost calculated based on location and size of the piece.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-verse">“...filled him with the Spirit of God, with wisdom, with understanding, with knowledge and with all kinds of skills.” — Exodus 35:31</p>
+      <p class="footer-copy">© <span id="year"></span> Spirit-Filled Creations. All rights reserved. Handmade with care.</p>
+    </div>
+  </footer>
+
+  <!-- Order Modal -->
+  <div class="modal" id="order-modal" hidden>
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+      <h3>Order Request</h3>
+      <p id="modal-product-name"></p>
+      <p class="modal-price" id="modal-product-price"></p>
+      <p>To complete your order, please send a message via the contact form or WhatsApp with:</p>
+      <ul>
+        <li>Product name</li>
+        <li>Your shipping address / city</li>
+        <li>Preferred payment method</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary" id="modal-go-contact">Go to Contact Form</a>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
