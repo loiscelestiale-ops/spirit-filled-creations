@@ -838,3 +838,38 @@ a:hover {
     padding: 1.6rem;
   }
 }
+/* Velvety Emerald Green Live Background */
+.live-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 90% 70% at 15% 25%, rgba(61, 155, 118, 0.4) 0%, transparent 55%),
+    radial-gradient(ellipse 80% 60% at 85% 75%, rgba(42, 122, 92, 0.45) 0%, transparent 50%),
+    radial-gradient(ellipse 50% 40% at 50% 50%, rgba(168, 230, 207, 0.15) 0%, transparent 60%),
+    linear-gradient(165deg, #072820 0%, #0a2f24 25%, #0d3b2e 55%, #14523c 80%, #0a2f24 100%);
+  background-size: 200% 200%;
+  animation: velvetShift 20s ease-in-out infinite;
+}
+
+.live-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 25% 35%, rgba(248, 200, 216, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 70% 55%, rgba(212, 196, 240, 0.12) 0%, transparent 45%),
+    radial-gradient(circle at 45% 85%, rgba(255, 216, 184, 0.08) 0%, transparent 35%);
+  animation: pastelFloat 24s ease-in-out infinite alternate;
+  pointer-events: none;
+}
+
+@keyframes velvetShift {
+  0%, 100% { background-position: 0% 40%; }
+  50% { background-position: 100% 60%; }
+}
+
+@keyframes pastelFloat {
+  0% { opacity: 0.65; transform: scale(1); }
+  100% { opacity: 1; transform: scale(1.08); }
+}
